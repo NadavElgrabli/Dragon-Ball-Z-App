@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="164dp"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_view_character_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/card_view_character_image"
+        android:fontFamily="sans-serif-medium"
+        android:text="character name"
+        android:textColor="#272727"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_character_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_character_name"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@+id/card_view_character_image"
+        android:fontFamily="sans-serif-light"
+        android:text="This will be very long character descriptionsssssssssssssss"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_character_image"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        app:cardCornerRadius="16dp">
+
+
+        <ImageView
+            android:id="@+id/image_view_character_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
